@@ -66,7 +66,8 @@ body {
 .description-bg h2 {
     color: white;
     font-family: 'PT Sans', sans-serif;
-    font-size: 27px;
+    font-size: 25px;
+    margin-bottom: 1px;
     font-weight: bold;
     text-transform: uppercase;
     color: gray;
