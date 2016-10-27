@@ -10,12 +10,17 @@ $scope.team = [{
   "subleader": "Norbert Nowakowski",
   "value": "40%",
   "employees": [
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-    {"firstName":"Marek", "lastName":"Nowak", "interest":10}
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male1.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male3.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female3.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male1.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female2.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male1.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male3.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female3.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male1.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female2.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female1.png"}
 ]
 }, {
   "id": 2,
@@ -24,13 +29,11 @@ $scope.team = [{
   "subleader": "Andrzej Kowalski",
   "value": "20%",
   "employees": [
-    {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-      {"firstName":"John", "lastName":"Doe", "interest":20},
-    {"firstName":"Anna", "lastName":"Smith", "interest":80}
+    {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female3.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female2.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male1.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female1.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male3.png"}
 ]
 }, {
   "id": 3,
@@ -39,19 +42,10 @@ $scope.team = [{
   "subleader": "Marek Nowakowski",
   "value": "80%",
   "employees": [
-    {"firstName":"John", "lastName":"Doe", "interest":40},
-    {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-      {"firstName":"Anna", "lastName":"Smith", "interest":50},
-    {"firstName":"Peter", "lastName":"Jones", "interest":20}
+    {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "male1.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female2.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female3.png"},
+      {"firstName":"John", "lastName":"Doe", "position":"developer", "img": "female1.png"}
 ]
 }]
 

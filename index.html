@@ -47,47 +47,31 @@
       <!--</div>
     </nav>-->
 
-    <div class="container" ng-app="myApp" ng-controller="GreetingController">
-      <!-- Example row of columns -->
-
-      <div class="row">
-        <div class="col-xs-12">
-            <div class="header">
-                <section>
-                <p>Aktualna liczba projektów: {{team.length}}</p>
-                </section>
-                <section>
-                <input placeholder="szukaj projektu" ng-model="searchProject">
+<div class="fluid-container" ng-app="myApp" ng-controller="GreetingController">
+<div class="main-section" ng-repeat="n in team | filter:searchProject">
+<input placeholder="szukaj projektu" ng-model="searchProject">
                 <input placeholder="szukaj osoby" ng-model="searchPerson">
-                </section>
-            </div>
-
-
-
-
-
-          <div class="main-section" ng-repeat="n in team | filter:searchProject">
-
-
-              <h1>{{n.project}}</h1>
-              <p>Liczba członków zespołu: {{n.employees.length}}</p>
-
-              <h3>Project manager<br> {{n.leader}}</h3>
-
-              <div class="members">
-              <ul>
-                <li ng-repeat="e in n.employees  | filter:searchPerson | orderBy:'-interest'">
-                    <p><i class="fa fa-user" aria-hidden="true"></i> {{e.firstName}} {{e.lastName}}</p>
-                  </li>
-              </ul>
-            </div>
-
-
-            </div>
-          <p></p>
-
-        </div>
-      </div>
+<div class="description-bg">
+    <div class="description-content">
+        <h1>{{n.project}}</h1>
+        <h2>{{n.leader}}</h2>
+        <p>project manager</p>
+    </div>
+</div>
+<div class="members-bg">
+    <div class="members-content">
+        <h1>OUR TEAM</h1>
+        <h2>{{n.employees.length}} members</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>In viverra diam at arcu posuere, nec ullamcorper nulla hendrerit. Phasellus blandit erat urna.</h3>
+        <ul>
+            <li ng-repeat="e in n.employees  | filter:searchPerson | orderBy:'-interest'">
+                <p class="name"><img ng-src="img/{{e.img}}" alt="Description" /> {{e.firstName}} {{e.lastName}}</p>
+                <p class="position">{{e.position}}</p>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
 
       <hr>
 
