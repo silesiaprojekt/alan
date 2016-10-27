@@ -98,7 +98,21 @@ body {
 
 
 
-
+.search-bg {
+    width: 100%;
+    padding-bottom: 60px;
+    background: rgba(0, 128, 0, 0.4);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.search-bg .search-content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-bg input {
+    border: none;
+    height: 40px;
+}
 
 
 

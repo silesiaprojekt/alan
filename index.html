@@ -48,9 +48,12 @@
     </nav>-->
 
 <div class="fluid-container" ng-app="myApp" ng-controller="GreetingController">
+<div class="search-bg">
+    <div class="search-content">
+        <input placeholder="szukaj projektu" ng-model="searchProject"><input placeholder="szukaj osoby" ng-model="searchPerson">
+    </div>
+</div>
 <div class="main-section" ng-repeat="n in team | filter:searchProject">
-<input placeholder="szukaj projektu" ng-model="searchProject">
-                <input placeholder="szukaj osoby" ng-model="searchPerson">
 <div class="description-bg">
     <div class="description-content">
         <h1>{{n.project}}</h1>
@@ -72,8 +75,7 @@
     </div>
 </div>
 </div>
-
-      <hr>
+<hr>
 
       <footer>
         <p>&copy; Kamil Grygiel 2016</p>
