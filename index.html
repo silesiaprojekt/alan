@@ -50,24 +50,29 @@
 <div class="fluid-container" ng-app="myApp" ng-controller="GreetingController">
 <div class="search-bg">
     <div class="search-content">
-        <input placeholder="szukaj projektu" ng-model="searchProject"><input placeholder="szukaj osoby" ng-model="searchPerson">
+        <div class="search-input">
+            <input placeholder="szukaj projektu" ng-model="searchProject">
+        </div>
+        <div class="search-input">
+            <input placeholder="szukaj osoby" ng-model="searchPerson">
+        </div>
     </div>
 </div>
 <div class="main-section" ng-repeat="n in team | filter:searchProject">
 <div class="description-bg">
     <div class="description-content">
-        <h1>{{n.project}}</h1>
+        <h1 style="color:{{n.color}}">{{n.project}}</h1>
         <h2>{{n.leader}}</h2>
-        <p>project manager</p>
+        <p style="color:{{n.color}}">project manager</p>
     </div>
 </div>
-<div class="members-bg">
+<div class="members-bg" style="background:{{n.color}}">
     <div class="members-content">
         <h1>OUR TEAM</h1>
         <h2>{{n.employees.length}} members</h2>
         <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>In viverra diam at arcu posuere, nec ullamcorper nulla hendrerit. Phasellus blandit erat urna.</h3>
         <ul>
-            <li ng-repeat="e in n.employees  | filter:searchPerson | orderBy:'-interest'">
+            <li ng-repeat="e in n.employees  | filter:searchPerson">
                 <p class="name"><img ng-src="img/{{e.img}}" alt="Description" /> {{e.firstName}} {{e.lastName}}</p>
                 <p class="position">{{e.position}}</p>
             </li>

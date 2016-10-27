@@ -5,6 +5,7 @@ myApp.controller('GreetingController', ['$scope', function($scope) {
 $scope.team = [{
   "id": 1,
   "project": "Cream",
+  "color": "rgba(0, 128, 0, 0.4)",
   "leader": "Andrzej Kowalski",
   "email": "andrzej@poczta.pl",
   "subleader": "Norbert Nowakowski",
@@ -25,6 +26,7 @@ $scope.team = [{
 }, {
   "id": 2,
   "project": "brackets",
+    "color": "rgba(94, 162, 255, 0.4);",
   "leader": "Marek Nowakowski",
   "subleader": "Andrzej Kowalski",
   "value": "20%",
@@ -37,6 +39,7 @@ $scope.team = [{
 }, {
   "id": 3,
   "project": "mobile zone",
+    "color": "rgba(253, 118, 69, 0.4);",
   "leader": "Ryszard Zawadzki",
   "subleader": "Marek Nowakowski",
   "value": "80%",
